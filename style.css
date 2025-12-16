@@ -347,7 +347,7 @@ ol:last-child {
   top: 0;
 }
 
-.c-nav__list {
+.l-header .c-nav__list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -1763,6 +1763,7 @@ address a {
 
 .g-4 > * {
   padding: var(--space-md);
+  width: 100%;
 }
 
 .small {
@@ -1913,5 +1914,22 @@ address a {
   .l-section--hero,
   .hero-section {
     min-height: 700px;
+  }
+}
+
+/* AUTO-INJECTED: bg-dark child text fix */
+.bg-dark > * {
+  color:white!important;
+}
+
+/* --- AUTO-INJECTED: AOS mobile/tablet override --- */
+@media (max-width: 1024px) {
+  [data-aos="fade-left"],
+  [data-aos="fade-right"] {
+    transform: translateX(0) !important;
+    opacity: 1 !important;
+  }
+  .c-logo__img {
+    display: none!important;
   }
 }
